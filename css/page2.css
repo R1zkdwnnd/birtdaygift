@@ -1,0 +1,153 @@
+/* Import font dari style.css (tetap sama) */
+
+body {
+  background-color: #ffd6e0;
+  color: #ea5353;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  max-width: 600px;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 1.2s ease;
+}
+
+#start-journey {
+  background: rgba(255, 255, 255, 0.85);
+  color: #ff7fa2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#start-journey:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* Journey section */
+.journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.photo-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Frame utama */
+.photo-frame img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.photo-frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-frame img {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* shadow lembut di belakang */
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* smooth fade antar foto */
+}
+
+.photo-frame img.fade-in {
+  opacity: 1;
+}
+
+
+.photo-frame img.fade-in {
+  opacity: 1;
+}
+
+.text-frame {
+  max-width: 400px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* Next button */
+#next-photo {
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #ff7fa2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#next-photo:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+/* Fade in anim */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Hidden util */
+.hidden {
+  display: none;
+}
+
+.fade {
+  animation: fadeIn 1.2s ease;
+}
+
+
+.text-frame p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  min-height: 100px;
+  opacity: 0.95;
+  white-space: pre-line;
+}
+
+#to-page3-btn {
+  display: none;
+  opacity: 0;
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  margin-top: 30px;
+  background: #ff66b3;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transform: translateY(20px);
+}
+
+#to-page3-btn.show {
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(0);
+}

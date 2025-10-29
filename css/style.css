@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'MyLocalFont';
+  src: url('../assets/fonts/Sweet\ Toffee.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd6e0;
+  font-family: 'MyLocalFont', sans-serif;
+  color: #fe9a5b;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+#birthday-text {
+  font-size: 4rem;
+  line-height: 1.5;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+#next-btn {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ff7fa2;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#next-btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Gift</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/page4.css" />
+</head>
+<body>
+  <!-- Background Confetti -->
+  <canvas id="confetti-canvas"></canvas>
+  <canvas id="confetti-canvas"></canvas>
+
+
+  <!-- Gift Box -->
+  <div class="gift-container">
+    <div class="gift-box" id="giftBox">
+      <div class="lid"></div>
+      <div class="box"></div>
+      <p class="tap-text">Tap the gift 🎁</p>
+    </div>
+  </div>
+
+  <!-- Modal Letter -->
+  <div class="modal" id="letterModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>For You 💌</h2>
+      <p>
+        Di setiap perjalanan, kamu selalu punya cara buat bikin semuanya berarti.  
+        Surat kecil ini cuma pengingat, bahwa kamu dicintai, disayangi, dan berharga — selalu.  
+        Terima kasih udah jadi bagian terindah dari hidup ini. 💖
+        <br> <br>A little gift for u, scan this qrcode!
+      </p>
+      <img src="assets/images/qrcode.jpg" alt="QR Code" class="qr-image" />
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="assets/music/page4.mp3" loop></audio>
+
+  <!-- JS -->
+  <script src="js/page4.js"></script>
+</body>
+</html>
